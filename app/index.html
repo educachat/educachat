@@ -5,10 +5,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>EducaChat</title>
+  <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-  <h1>Educachat</h1>
-  <a href="#" id="link-sobre">Sobre</a>
+  <div class="container">
+  <header id="page-header">
+    <h1 class="page-title">Educachat</h1>
+    <nav class="menu-main">
+      <ul>
+        <li>
+          <span class="user-photo dropdown-toggle">
+            <img src="http://lorempixel.com/output/people-q-c-40-40-9.jpg" alt="usuario">
+          </span>
+          <ul class="dropdown">
+            <li><a href="#">Perfil</a></li>
+            <li><a href="#">Preferências</a></li>
+            <li><a href="#">Sair</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <aside id="room-container">
+    <ul class="room-list">
+      <li>
+        <a href="#" class="room-name">Matemática</a>
+        <ul class="user-list">
+          <li><a href="#" class="user-item">Aluno 1</a></li>
+          <li><a href="#" class="user-item">Aluno 2</a></li>
+          <li><a href="#" class="user-item">Aluno 3</a></li>
+          <li><a href="#" class="user-item">Aluno 4</a></li>
+          <li><a href="#" class="user-item">Aluno 5</a></li>
+          <li><a href="#" class="user-item">Aluno 6</a></li>
+          <li><a href="#" class="user-item">Aluno 7</a></li>
+          <li><a href="#" class="user-item">Aluno 8</a></li>
+          <li><a href="#" class="user-item">Aluno 9</a></li>
+          <li><a href="#" class="user-item">Aluno 10</a></li>
+        </ul>
+      </li>
+    </ul>
+  </aside>
+  <section id="page-main">
+    <div class="message">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, numquam beatae nihil sint ducimus quae. Nisi quam animi consequuntur fuga quaerat, dignissimos vero aut pariatur nostrum corrupti, dolorum possimus facere.
+    </div>
+    <div class="message">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, numquam beatae nihil sint ducimus quae. Nisi quam animi consequuntur fuga quaerat, dignissimos vero aut pariatur nostrum corrupti, dolorum possimus facere.
+    </div>
+    <div class="message">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, numquam beatae nihil sint ducimus quae. Nisi quam animi consequuntur fuga quaerat, dignissimos vero aut pariatur nostrum corrupti, dolorum possimus facere.
+    </div>
+    <div class="message">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, numquam beatae nihil sint ducimus quae. Nisi quam animi consequuntur fuga quaerat, dignissimos vero aut pariatur nostrum corrupti, dolorum possimus facere.
+    </div>
+  </section>
+    <form action="#" id="page-send-message" class="message-input-area">
+      <input type="text" name="message-input" class="message-input">
+      <input type="submit" value="Enviar" class="message-send">
+    </form>
+  </div>
   <script src="scripts/renderer.js"></script>
+  <script src="scripts/menu.js"></script>
+  <script id="__bs_script__">//<![CDATA[
+    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.23.6'><\/script>".replace("HOST", location.hostname));
+//]]></script>
 </body>
 </html>

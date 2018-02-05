@@ -1,0 +1,49 @@
+.menu {
+
+  &-main {
+    float: right;
+    
+    & > ul {
+
+      .dropdown {
+        background-color: @white;
+        display: none;
+        right: 15px;
+        // overflow: hidden;
+        position: absolute;
+        // top: 65px;
+        
+        .border;
+        .radius;
+        .shadow;
+
+        &-opened {
+          display: block !important;
+        }
+      }
+    }
+
+
+    li {
+
+      & > a {
+        background-color: @white;
+        display: block;
+        z-index: 999999;
+
+        .padding-text;
+        
+        &:hover {
+          background-color: @primary-color;
+          color: @white;
+
+          .radius;
+        }
+      }
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+}

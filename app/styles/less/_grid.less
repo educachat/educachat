@@ -1,0 +1,46 @@
+#page-header {
+  grid-area: header;
+}
+
+#room-container {
+  grid-area: sidebar;
+
+  .padding-default;
+}
+
+#page-main {
+  grid-area: main;
+  overflow: scroll;
+  position: relative;
+
+  .padding-default;
+}
+
+#page-send-message {
+  grid-area: footer;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 250px auto auto auto;
+  grid-template-rows: 70px auto 50px;
+  grid-template-areas: 
+    "header header header header"
+    "sidebar main main main"
+    "footer footer footer footer";
+  height: 100vh;
+}
+
+.message-input {
+  grid-area: input;
+}
+.message-send {
+  grid-area: button;
+}
+.message-input-area {
+  display: grid;
+  grid-column-gap: 10px;
+  grid-template-columns: auto 75px;
+  grid-template-areas: 
+    "input button";
+}
